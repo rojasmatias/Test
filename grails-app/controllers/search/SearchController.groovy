@@ -23,7 +23,7 @@ class SearchController {
 //				format: 'json'
 				])
 
-			render response.data as JSON
+			render response.data
 		}
 	}
 }
