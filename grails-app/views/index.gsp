@@ -102,9 +102,6 @@ p {
 
 
 
-		<%--		<p>Distintas formas de pago</p>--%>
-
-
 		<div>
 			<div id="prueba"></div>
 		</div>
@@ -112,9 +109,8 @@ p {
 
 	<script>
 		$("#boton").on('click', function() {
-			alert($("#item").val());
 			$.ajax({
-				url : "search/Search/buscar",
+				url : "Search/buscar",
 				data : {
 					item : $("#item").val()
 				},
