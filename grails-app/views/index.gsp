@@ -87,8 +87,8 @@ p {
 	<div id="status" role="complementary">
 		<ul>
 			<li class="controller"><g:textField name="item" /></li>
-			<li class="controller" align="right"><a href="#" controller="paymentsClient"
-				id="boton" >Search</a></li>
+			<li class="controller" align="right"><a href="#"
+				controller="paymentsClient" id="boton">Search</a></li>
 
 		</ul>
 
@@ -103,7 +103,20 @@ p {
 
 
 		<div>
-			<div id="prueba"></div>
+			<div id="prueba">
+
+				<g:each in="${categoriaInstanceList}" status="i"
+					var="categoriaInstance">
+					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+
+						<td><g:link action="show" id="${categoriaInstance.title}">
+								${fieldValue(bean: categoriaInstance, field: "price")}
+							</g:link></td>
+
+					</tr>
+				</g:each>
+
+			</div>
 		</div>
 	</div>
 

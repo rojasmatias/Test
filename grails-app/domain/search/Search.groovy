@@ -1,10 +1,11 @@
 package search
 
 class Search {
-	String site_id	
-	String query
-
-
+	String thumbnail	
+	String permalink
+	String price
+	String title
+	
 }
 
 
