@@ -9,6 +9,7 @@ class Product {
 	String subtitle
 	Float price
 	String image
+	String link
     static constraints = {
     }
 }

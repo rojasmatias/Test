@@ -41,7 +41,9 @@ class ProductController {
 			producto.id = it.get("id")
 			producto.title = it.get("title")
 			producto.subtitle = it.get("subtitle")
-			producto.price = it.get("price") 
+			producto.price = it.get("price")
+			producto.image = it.get("thumbnail") 
+			producto.link = it.get("permalink")
 			//productsList.add()
 			productsList.add(producto)
 		}
