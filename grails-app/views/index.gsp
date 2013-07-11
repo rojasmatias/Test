@@ -110,7 +110,7 @@ p {
 	<script>
 		$("#boton").on('click', function() {
 			$.ajax({
-				url : "Search/buscar",
+				url : "Product/list",
 				data : {
 					item : $("#item").val()
 				},
