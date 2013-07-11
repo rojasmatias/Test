@@ -24,6 +24,7 @@ class SearchController {
 //				has_pictures:"yes",
 				format: 'json'
 				])
+
 			def categoriesList = []
 			
 			def categoriesJson = response.data
@@ -45,6 +46,7 @@ class SearchController {
 			}
 							
 			[categoriaInstanceList: categoriesList, 	Total:categoriesList.size()]
+
 		}
 	}
 }
